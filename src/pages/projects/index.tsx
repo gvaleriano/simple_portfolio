@@ -13,14 +13,14 @@ interface Project {
       framework: string
     }[]
 }
-// token vercel h8sF9yZYpEqp3aRUdujDaoYT
+
 export function MainProjectsPage() {
   const [listProjects, setListProjects] = useState<Project[]>([])
   const [isProjectModalOpen, setIsProjectModalOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState<Project>()
   /*
   useEffect(() => {
-    const token = "h8sF9yZYpEqp3aRUdujDaoYT"
+    const token = ""
     const config = {  headers: { Authorization: `Bearer ${token}` }} 
     vercelApi.get(`/v6/deployments`, config)
     .then(response => setListProjects(response.data.deployments))
